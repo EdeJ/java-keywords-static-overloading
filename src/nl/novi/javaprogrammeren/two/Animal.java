@@ -1,8 +1,14 @@
 package nl.novi.javaprogrammeren.two;
 
-public final class Animal {
+public abstract class Animal {
 
-    private int amountOfLegs;
-    private String name;
+    protected int amountOfLegs;
+    protected String name;
 
+    public Animal(String name, int amountOfLegs) {
+        this.name = name;
+        this.amountOfLegs = amountOfLegs;
+    }
+
+    public abstract void pet();
 }
